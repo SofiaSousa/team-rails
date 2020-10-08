@@ -1,4 +1,4 @@
-## Level 0 - Get on Rails!
+## Lv 0 - Get on Rails!
 
 **Rails** or [Ruby on Rails](https://github.com/rails/rails) is a framework built in [Ruby language](https://www.ruby-lang.org/) and designed to create web apps. 
 
@@ -43,6 +43,7 @@ We use [Bundler](https://bundler.io/) to manage our applications' gems.
 ```bash
 bundle install
 ```
+
 ### The Rails Doctrine
 
 Getting back to Rails, these are the most important pillars of [The Rails Doctrine](https://rubyonrails.org/doctrine/):
