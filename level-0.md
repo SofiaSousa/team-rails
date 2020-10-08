@@ -8,7 +8,7 @@
 
 In Ruby world, the libraries or modules that we can install and use when building our web apps are called **gems**. For example, **Rails** is in fact a Ruby gem.
 
-There is a public hosting service where we can search for available gems, the [RubyGems.org](https://rubygems.org). To install a gem we can use the [gem command](https://guides.rubygems.org/rubygems-basics/), but first make sure Ruby is installed.
+There is a public hosting service where we can search for available gems, the [RubyGems.org](https://rubygems.org). To install a gem we can use the [gem command](https://guides.rubygems.org/rubygems-basics/), but first make sure Ruby is installed, since RubyGems comes built-in with Ruby 1.9 and newer.
 
 ```
 $ ruby -v
