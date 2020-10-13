@@ -1,4 +1,4 @@
-# Welcome to Team-Rails 
+# Welcome to Team-Rails :balloon:
 
 Please, be welcomed to the Team-Rails! 
 
@@ -10,4 +10,4 @@ The goal is not to provide a "Holy Bible" of Rails (we already have [Rails Guide
 
 Throughout this guide, you will find lots of links that may help you to know more about the topics that will be covered here.
 
-[Let's get started!](./level-0.md)
+[Let's get started!](./level-0.md) :rocket:
