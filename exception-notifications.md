@@ -29,7 +29,7 @@ Rails.application.config.middleware.use ExceptionNotification::Rack,
 
 ### Slack notifications :computer:
 
-For Slack notifications slack-notifier gem is also required. Add the gem to Gemfile:
+For Slack notifications **slack-notifier** gem is also required. Add the gem to Gemfile:
 
 ```ruby
 gem 'slack-notifier'
