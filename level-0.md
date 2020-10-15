@@ -4,6 +4,22 @@
 
 ![Rails logo](https://rubyonrails.org/images/rails-logo.svg)
 
+### The Rails Doctrine
+
+Getting back to Rails, these are the most important pillars of [The Rails Doctrine](https://rubyonrails.org/doctrine/):
+
+1. [Optimize for programmer happiness](https://rubyonrails.org/doctrine/#optimize-for-programmer-happiness)
+1. [Convention over Configuration](https://rubyonrails.org/doctrine/#convention-over-configuration)
+1. [The menu is omakase](https://rubyonrails.org/doctrine/#omakase)
+1. [No one paradigm](https://rubyonrails.org/doctrine/#no-one-paradigm)
+1. [Exalt beautiful code](https://rubyonrails.org/doctrine/#beautiful-code)
+1. [Provide sharp knives](https://rubyonrails.org/doctrine/#provide-sharp-knives)
+1. [Value integrated systems](https://rubyonrails.org/doctrine/#integrated-systems)
+1. [Progress over stability](https://rubyonrails.org/doctrine/#progress-over-stability)
+1. [Push up a big tent](https://rubyonrails.org/doctrine/#big-tent)
+
+![Rails doctrine](https://rubyonrails.org/images/doctrine.png)
+
 ### Ruby and Gems
 
 In Ruby world, the libraries or modules that we can install and use when building our web apps are called **gems**. For example, **Rails** is in fact a Ruby gem.
@@ -36,7 +52,7 @@ Done installing documentation for sass after 2 seconds
 1 gem installed
 ```
 
-The set of gems of  used to be listed on our app `Gemfile`. 
+The set of gems that an app requires used to be listed on the `Gemfile`. 
 
 ```ruby
 source "https://rubygems.org"
@@ -51,27 +67,10 @@ gem "sass-rails", "~> 5.0"
 gem "jbuilder", "~> 2.5"
 ```
 
-We use [Bundler](https://bundler.io/) to manage our applications' gems. To install gems from you `Gemfile` we can use the following command:
+We use [Bundler](https://bundler.io/) to manage our applications' gems. To install gems from the `Gemfile` we can use the following command:
 
 ```bash
 $ bundle install
 ```
-
-### The Rails Doctrine
-
-Getting back to Rails, these are the most important pillars of [The Rails Doctrine](https://rubyonrails.org/doctrine/):
-
-1. [Optimize for programmer happiness](https://rubyonrails.org/doctrine/#optimize-for-programmer-happiness)
-1. [Convention over Configuration](https://rubyonrails.org/doctrine/#convention-over-configuration)
-1. [The menu is omakase](https://rubyonrails.org/doctrine/#omakase)
-1. [No one paradigm](https://rubyonrails.org/doctrine/#no-one-paradigm)
-1. [Exalt beautiful code](https://rubyonrails.org/doctrine/#beautiful-code)
-1. [Provide sharp knives](https://rubyonrails.org/doctrine/#provide-sharp-knives)
-1. [Value integrated systems](https://rubyonrails.org/doctrine/#integrated-systems)
-1. [Progress over stability](https://rubyonrails.org/doctrine/#progress-over-stability)
-1. [Push up a big tent](https://rubyonrails.org/doctrine/#big-tent)
-
-![Rails doctrine](https://rubyonrails.org/images/doctrine.png)
-
 
 _At this point, we are able to understand the difference between Rails and Ruby, what are gems, the Gemfile and why we need the Bundler._
