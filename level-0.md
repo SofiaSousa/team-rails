@@ -73,6 +73,9 @@ We use [Bundler](https://bundler.io/) to manage our applications' gems. To insta
 $ bundle install
 ```
 
+RBENV
+(TODO)
+
 ---
 
-_At this point, we are able to understand the difference between Ruby and Rails, what are gems, the Gemfile and why we need the Bundler._
+_At this point, we are able to understand the difference between Ruby and Rails, what are gems, the Gemfile and why we need the Bundler and rbenv._
