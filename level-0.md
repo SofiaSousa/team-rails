@@ -38,13 +38,11 @@ Done installing documentation for sass after 2 seconds
 
 they used to be listed on our app `Gemfile`. 
 
-We use [Bundler](https://bundler.io/) to manage our applications' gems.
+We use [Bundler](https://bundler.io/) to manage our applications' gems. To install gems from you `Gemfile` we can use the following command:
 
 ```bash
 $ bundle install
 ```
-
-To install gems from you `Gemfile`.
 
 ### The Rails Doctrine
 
