@@ -36,7 +36,20 @@ Done installing documentation for sass after 2 seconds
 1 gem installed
 ```
 
-they used to be listed on our app `Gemfile`. 
+The set of gems of  used to be listed on our app `Gemfile`. 
+
+```ruby
+source "https://rubygems.org"
+
+# Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
+gem "rails", "~> 5.1.2"
+# Use Puma as the app server
+gem "puma", "~> 3.7"
+# Use SCSS for stylesheets
+gem "sass-rails", "~> 5.0"
+# Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
+gem "jbuilder", "~> 2.5"
+```
 
 We use [Bundler](https://bundler.io/) to manage our applications' gems. To install gems from you `Gemfile` we can use the following command:
 
