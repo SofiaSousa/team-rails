@@ -36,13 +36,15 @@ Done installing documentation for sass after 2 seconds
 1 gem installed
 ```
 
-they used to be listed on our project **Gemfile**. 
+they used to be listed on our app `Gemfile`. 
 
 We use [Bundler](https://bundler.io/) to manage our applications' gems.
 
 ```bash
-bundle install
+$ bundle install
 ```
+
+To install gems from you `Gemfile`.
 
 ### The Rails Doctrine
 
