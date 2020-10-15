@@ -13,7 +13,7 @@ group :development do
 end
 ```
 
-Install them using Bundler
+Install them using Bundler:
 
 ```
 $ bundle install
@@ -32,6 +32,17 @@ mkdir -p lib/capistrano/tasks
 create Capfile
 Capified
 ```
+
+---
+Capistrano tasks
+
+Capistrano gems you installed provide a set of tasks that help you on the deployment process. Use the following commad to see the Capistrano list of tasks:
+
+```
+$ bundle exec cap -T
+```
+
+---
 
 In `Capfile`, you will have to require the sets you need. For example:
 
@@ -96,14 +107,8 @@ If you get a message like "WARN  rbenv: 2.6.3 is not installed or not found ..."
 $ rbenv install 2.6.3
 ```
 
-Other error/warning message could show up like 
+If it passes on the `deploy:check` task, you are ready to deploy!
 
 ```
-Permission denied (publickey).
-      01 fatal: Could not read from remote repository.
-      01
-      01 Please make sure you have the correct access rights
-      01 and the repository exists.
+$ bundle exec cap production deploy 
 ```
-
-Please make sure all the server setup was done before.
