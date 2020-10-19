@@ -11,3 +11,10 @@ The goal is not to provide a "Holy Bible" of Rails (we already have [Rails Guide
 Throughout this guide, you will find lots of links that may help you to know more about the topics that will be covered here.
 
 [Let's get started!](./level-0.md) :rocket:
+
+---
+
+## Table of levels
+
+- [Lv 0 - Get on Rails](./level-0.md)
+- [Lv 1 - Hello Rails](./level-1.md)
