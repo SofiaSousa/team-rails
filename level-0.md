@@ -79,3 +79,7 @@ RBENV
 ---
 
 _At this point, we are able to understand the difference between Ruby and Rails, what are gems, the Gemfile and why we need the Bundler and rbenv._
+
+---
+
+[Go to Lv 1 - Hello Rails](./level-1.md)
