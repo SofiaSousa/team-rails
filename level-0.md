@@ -24,7 +24,7 @@ These are the most important pillars of [The Rails Doctrine](https://rubyonrails
 
 In Ruby world, libraries or modules used when building our web apps are called **gems**. For example, **Rails** is in fact a Ruby gem.
 
-![Ruby logo](https://image.pngaaa.com/152/769152-small.png)
+![Ruby logo](https://www.ruby-lang.org/images/header-ruby-logo.png)
 
 There is a public hosting service where we can search for available gems, the [RubyGems.org](https://rubygems.org). To install a gem globaly, we can use the [gem command](https://guides.rubygems.org/rubygems-basics/), but first make sure Ruby is installed, since RubyGems comes built-in with Ruby 1.9 and newer.
 
@@ -71,7 +71,7 @@ gem "jbuilder", "~> 2.5"
 
 ### Bundler
 
-We use [Bundler](https://bundler.io/) (which is also a gem) to manage our applications' gems. 
+[Bundler](https://bundler.io/) which is also a gem is our gems manager: we can use to install or update our projects gems. 
 
 ```
 $ gem install bundler
