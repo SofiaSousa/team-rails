@@ -6,7 +6,7 @@
 
 _"Optimizing for programmer happiness with Convention over Configuration is how we roll. "_
 
-### The Rails Doctrine
+#### The Rails Doctrine
 
 These are the most important pillars of [The Rails Doctrine](https://rubyonrails.org/doctrine/):
 
@@ -20,7 +20,7 @@ These are the most important pillars of [The Rails Doctrine](https://rubyonrails
 1. [Progress over stability](https://rubyonrails.org/doctrine/#progress-over-stability)
 1. [Push up a big tent](https://rubyonrails.org/doctrine/#big-tent)
 
-### Ruby and Gems
+### Ruby and Gems :gem:
 
 In Ruby world, libraries or modules used when building our web apps are called **gems**. For example, **Rails** is in fact a Ruby gem.
 
@@ -54,7 +54,7 @@ Done installing documentation for sass after 2 seconds
 1 gem installed
 ```
 
-The set of gems that a Ruby project requires used to be listed on the `Gemfile`. 
+The set of gems that a Ruby project requires used to be listed on the `Gemfile` (yep, capitalized and without extension). 
 
 ```ruby
 source "https://rubygems.org"
@@ -69,15 +69,15 @@ gem "sass-rails", "~> 5.0"
 gem "jbuilder", "~> 2.5"
 ```
 
-### Bundler
+### Bundler :package:
 
-[Bundler](https://bundler.io/) which is also a gem is our gems manager: we can use to install or update our projects gems. 
+[Bundler](https://bundler.io/) - which is also a gem - is our dependencies manager: we can use it to install or update our projects gems. 
 
 ```
 $ gem install bundler
 ```
 
-To install gems from the `Gemfile` we can use the following command:
+To install gems from the `Gemfile`, we just have to run the following command:
 
 ```
 $ bundle install
@@ -88,26 +88,26 @@ $ bundle install
 Since it's very common to have different Rails apps running with different versions of Ruby, we need to have different Ruby versions installed in our machines. We can use [rbenv](https://github.com/rbenv/rbenv) to create an individual environment for each Rails app:
 
 ```
-$ rbenv local 2.5.0
+$ rbenv local <ruby-version>
 ```
 
-This command will install version 2.5.0 and create a `.ruby-version` file in the current directory with the Ruby version name. The local version set will override the global Ruby version in the current directory and subdirectories (we can confirm this by running `ruby -v` in the current dir, subdirs and parent dir). Ruby versions installed by rbenv are under `~/.rbenv/versions/` dir.
+This command will install the `<ruby-version>` version and create a `.ruby-version` file in the current directory with the Ruby version name. The local version will overrides the global Ruby version in the current directory and subdirectories (we can confirm this by running `ruby -v` in the current dir, subdirs and parent dir). Ruby versions installed by rbenv are under `~/.rbenv/versions/` dir.
 
-Now when we run `bundler install`, our gems from the `Gemfile` will be installed in `~/.rbenv/versions/<ruby-version>/lib/ruby/gems/...`. That means now we can have the same gem installed for different versions of Ruby.
+Now, when we run `bundler install`, our gems will be installed in `~/.rbenv/versions/<ruby-version>/lib/ruby/gems/...` dir. That means now we can have the same gem installed for different versions of Ruby.
 
 #### rbenv-gemset
 
-And if different Rails apps running in the same Ruby version, depend of the same gem but in different versions? We can create gemsets for each app with [rbenv-gemset](https://github.com/jf/rbenv-gemset), which is an extension for the rbenv.
+And if different Rails apps running in the same Ruby version, depend of the same gem but in different versions? Well, we can create gemsets for each app with [rbenv-gemset](https://github.com/jf/rbenv-gemset) extension.
 
 ```
-$ rbenv gemset init [gemsetname]
+$ rbenv gemset init <gemset-name>
 ```
 
 This command will set up the default gem set for our project under the current ruby version and create a `.rbenv-gemsets` file in the current directory with the gem set name (which can be the app name for example).
 
-Our app gems will be installed in `~/.rbenv/versions/<ruby-version>/gemsets/[gemsetname]/gems/...`.
+Our gems will be installed in `~/.rbenv/versions/<ruby-version>/gemsets/<gemset-name>/gems/...`.
 
-Keep `.ruby-version` and `.rbenv-gemsets` files in the app Git repo.
+Keep `.ruby-version` and `.rbenv-gemsets` (optional) files in the app Git repo.
 
 ---
 
