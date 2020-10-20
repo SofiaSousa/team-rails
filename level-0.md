@@ -6,7 +6,7 @@
 
 ### The Rails Doctrine
 
-Getting back to Rails, these are the most important pillars of [The Rails Doctrine](https://rubyonrails.org/doctrine/):
+These are the most important pillars of [The Rails Doctrine](https://rubyonrails.org/doctrine/):
 
 1. [Optimize for programmer happiness](https://rubyonrails.org/doctrine/#optimize-for-programmer-happiness)
 1. [Convention over Configuration](https://rubyonrails.org/doctrine/#convention-over-configuration)
