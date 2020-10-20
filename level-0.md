@@ -22,9 +22,9 @@ These are the most important pillars of [The Rails Doctrine](https://rubyonrails
 
 ### Ruby and Gems
 
-In Ruby world, the libraries or modules that we can install and use when building our web apps are called **gems**. For example, **Rails** is in fact a Ruby gem.
+In Ruby world, libraries or modules used when building our web apps are called **gems**. For example, **Rails** is in fact a Ruby gem.
 
-There is a public hosting service where we can search for available gems, the [RubyGems.org](https://rubygems.org). To install a gem we can use the [gem command](https://guides.rubygems.org/rubygems-basics/), but first make sure Ruby is installed, since RubyGems comes built-in with Ruby 1.9 and newer.
+There is a public hosting service where we can search for available gems, the [RubyGems.org](https://rubygems.org). To install a gem globaly, we can use the [gem command](https://guides.rubygems.org/rubygems-basics/), but first make sure Ruby is installed, since RubyGems comes built-in with Ruby 1.9 and newer.
 
 ```
 $ ruby -v
@@ -52,7 +52,7 @@ Done installing documentation for sass after 2 seconds
 1 gem installed
 ```
 
-The set of gems that an app requires used to be listed on the `Gemfile`. 
+The set of gems that a Ruby project requires used to be listed on the `Gemfile`. 
 
 ```ruby
 source "https://rubygems.org"
@@ -67,14 +67,45 @@ gem "sass-rails", "~> 5.0"
 gem "jbuilder", "~> 2.5"
 ```
 
-We use [Bundler](https://bundler.io/) to manage our applications' gems. To install gems from the `Gemfile` we can use the following command:
+### Bundler
 
-```bash
+We use [Bundler](https://bundler.io/) (which is also a gem) to manage our applications' gems. 
+
+```
+$ gem install bundler
+```
+
+To install gems from the `Gemfile` we can use the following command:
+
+```
 $ bundle install
 ```
 
-RBENV
-(TODO)
+### rbenv
+
+Since it's very common to have different Rails apps running with different versions of Ruby, we need to have different Ruby versions installed in our machines. We can use [rbenv](https://github.com/rbenv/rbenv) to create an individual environment for each Rails app:
+
+```
+$ rbenv local 2.5.0
+```
+
+This command will install version 2.5.0 and create a `.ruby-version` file in the current directory with the Ruby version name. The local version set will override the global Ruby version in the current directory and subdirectories (we can confirm this by running `ruby -v` in the current dir, subdirs and parent dir). Ruby versions installed by rbenv are under `~/.rbenv/versions/` dir.
+
+Now when we run `bundler install`, our gems from the `Gemfile` will be installed in `~/.rbenv/versions/<ruby-version>/lib/ruby/gems/...`. That means now we can have the same gem installed for different versions of Ruby.
+
+#### rbenv-gemset
+
+And if different Rails apps running in the same Ruby version, depend of the same gem but in different versions? We can create gemsets for each app with [rbenv-gemset](https://github.com/jf/rbenv-gemset), which is an extension for the rbenv.
+
+```
+$ rbenv gemset init [gemsetname]
+```
+
+This command will set up the default gem set for our project under the current ruby version and create a `.rbenv-gemsets` file in the current directory with the gem set name (which can be the app name for example).
+
+Our app gems will be installed in `~/.rbenv/versions/<ruby-version>/gemsets/[gemsetname]/gems/...`.
+
+Keep `.ruby-version` and `.rbenv-gemsets` files in the app Git repo.
 
 ---
 
