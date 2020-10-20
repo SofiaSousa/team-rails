@@ -1,8 +1,10 @@
 ## Lv 0 - Get on Rails!
 
-**Rails** or [Ruby on Rails](https://github.com/rails/rails) is a framework built in [Ruby language](https://www.ruby-lang.org/) and designed to create web apps. 
+**Rails** or [Ruby on Rails](https://github.com/rails/rails) is a developer-friendly framework built in [Ruby language](https://www.ruby-lang.org/) and designed to create web apps. 
 
-![Rails logo](https://rubyonrails.org/images/rails-logo.svg)
+![Rails logo](https://cdn.freebiesupply.com/logos/thumbs/1x/rails-1-logo.png)
+
+_"Optimizing for programmer happiness with Convention over Configuration is how we roll. "_
 
 ### The Rails Doctrine
 
@@ -18,11 +20,11 @@ These are the most important pillars of [The Rails Doctrine](https://rubyonrails
 1. [Progress over stability](https://rubyonrails.org/doctrine/#progress-over-stability)
 1. [Push up a big tent](https://rubyonrails.org/doctrine/#big-tent)
 
-![Rails doctrine](https://rubyonrails.org/images/doctrine.png)
-
 ### Ruby and Gems
 
 In Ruby world, libraries or modules used when building our web apps are called **gems**. For example, **Rails** is in fact a Ruby gem.
+
+![Ruby logo](https://image.pngaaa.com/152/769152-small.png)
 
 There is a public hosting service where we can search for available gems, the [RubyGems.org](https://rubygems.org). To install a gem globaly, we can use the [gem command](https://guides.rubygems.org/rubygems-basics/), but first make sure Ruby is installed, since RubyGems comes built-in with Ruby 1.9 and newer.
 
