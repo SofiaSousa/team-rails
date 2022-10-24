@@ -30,6 +30,10 @@ Do not forget to keep **bundler** updated too.
 
 `$ gem install bundler -v 2.3.20`
 
+And update hte `Gemfile.lock`:
+
+`$ bundle update --bundler`
+
 #### Test updated app
 
 Make sure updates don't break your app:
